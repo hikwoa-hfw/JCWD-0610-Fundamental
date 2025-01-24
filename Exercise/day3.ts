@@ -93,14 +93,14 @@ const num1: number = 42;
 const num4: number = 27;
 const num3: number = 18;
 
-let maxNum: number = Math.max(num1, num4, num3);
-let minNum: number = Math.min(num1, num4, num3);
-let midNum: number = num1 + num4 + num3 - (maxNum + minNum);
+const maxNum: number = Math.max(num1, num4, num3);
+const minNum: number = Math.min(num1, num4, num3);
+const midNum: number = num1 + num4 + num3 - (maxNum + minNum);
 
 console.log(`${minNum}, ${midNum}, ${maxNum}`);
 
 //10
-const word1 = undefined;
+const word1: any = null;
 
 if (typeof word1 === "string") {
   console.log("1");
@@ -109,6 +109,7 @@ if (typeof word1 === "string") {
 } else {
   console.log("3");
 }
+
 
 //11
 const word: string = "An apple a day keeps the doctor away";
