@@ -13,41 +13,39 @@ triangle(5);
 
 // no 2
 const triangleV2 = (height: number) => {
-  let temp: string = "";
   let num: number = 1;
   for (let i = 1; i <= height; i++) {
-    let temp2: string = "";
+    let temp: string = "";
     for (let j = 1; j <= i; j++) {
-      temp2 += (num < 10 ? "0" : "") + num + " ";
+      temp += (num < 10 ? "0" : "") + num + " ";
       num++;
     }
-    temp += temp2 + "\n";
+    console.log(temp);
   }
-  temp.split("\n");
-  return temp;
 };
-console.log(triangleV2(5));
+triangleV2(5)
 
 // no 3
 // fizz buzz
 
 const fizzBuzz = (input: number) => {
-  let temp: string[] = [];
+  let temp: string = "";
   for (let i = 1; i <= input; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      temp.push("fizzbuzz");
+      temp+= "fizzbuzz" + " ";
     } else if (i % 5 === 0) {
-      temp.push("buzz");
+      temp+= "buzz" + " "
     } else if (i % 3 === 0) {
-      temp.push("fizz");
+      temp+= "fizz" + " "
     } else {
-      temp.push(String(i));
+      temp+= i + " ";
     }
   }
   console.log(temp);
   return temp;
 };
 console.log(fizzBuzz(15));
+
 
 // no 4
 const inputWeight: number = 66;
@@ -75,11 +73,13 @@ console.log(bmi(inputWeight, heightBMI));
 const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const removeOdd = (numbers: number[]) => {
-  return numbers.filter((input) => input % 2 === 0);
+  return numbers.filter((number) => number % 2 === 0);
 };
 console.log(removeOdd(numbers));
 
 // no 6
-const str: string = "hello world jooo";
+const splitStr= (input: string)=> {
+  return input.split(" ")
+}
 
-console.log(str.split(" "));
+console.log(splitStr("hello world"));
