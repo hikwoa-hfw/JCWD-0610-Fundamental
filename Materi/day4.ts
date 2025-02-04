@@ -257,11 +257,11 @@ console.log(fruits3.sort());
 
 // tanpa compare fn
 
-const points: number[] = [1, 2, 3, 4, 11];
+const points: number[] = [98, 9, 4, 90];
 console.log(points.sort());
 
 // dg compare fn
-const points2: number[] = [1, 2, 3, 4, 11];
+const points2: number[] = [100, 8, 90];
 console.log(points2.sort((a, z) => a - z));
 
 //  reverse -> membalikkan urutan dalam array
