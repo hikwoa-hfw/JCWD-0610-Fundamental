@@ -59,6 +59,7 @@ class Transaction {
   allProduct: { product: Product; qty: number }[] = [];
   total: number = 0;
 
+
   addToCart(product: Product, qty: number) {
     const existingProduct = this.allProduct.find(
       (item) => item.product.name === product.name
@@ -121,3 +122,4 @@ console.log(tx.addToCart(produk2, 3));
 
 console.log(tx.showTotal());
 console.log(tx.checkout(9000000));
+
