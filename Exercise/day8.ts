@@ -149,7 +149,7 @@ class ShootingGame {
 
   start() {
     console.log("GAZ");
-    let turn: boolean = Math.random() > 0.5;
+    let turn: boolean = Math.random() >0.5;
     while (this.player1.heatlh > 0 && this.player2.heatlh > 0) {
       console.log(this.player1.showStatus());
       console.log(this.player2.showStatus());
